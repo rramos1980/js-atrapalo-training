@@ -86,7 +86,7 @@ We will add underscore and jquery to paths as well.
 
 No we can play changing our baseUrl to '/' an make the changes needed.
 
-## step4 ##
+## step5 ##
 
 Playing with shims
 
