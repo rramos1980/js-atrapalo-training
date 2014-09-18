@@ -86,5 +86,16 @@ We will add underscore and jquery to paths as well.
 
 No we can play changing our baseUrl to '/' an make the changes needed.
 
+## step4 ##
 
+Playing with shims
 
+To play arround with shim we will install backbone#1.0.0
+
+```
+bower install backbone#1.0.0 --save
+```
+
+Note that we have a conflict between versions to be saved, we can save our decision in "resolutions".
+
+Now we have errors as backbone 1.0.0 is not AMD ready

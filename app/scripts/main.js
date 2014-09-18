@@ -5,6 +5,13 @@ require.config({
         'jquery' : 'vendors/jquery/dist/jquery'
     },
 
+    shim: {
+        'backbone' : {
+            deps: ['underscore'],
+            exports: 'Backbone'
+        }
+    },
+
     baseUrl: '/'
 });
 
