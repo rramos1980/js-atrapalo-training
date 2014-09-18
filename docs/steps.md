@@ -58,4 +58,33 @@ We will require directly from main some test modules without dependencies:
 
 Check the mechanichs, inspecting source we will see script tags on the header of the page (head.appendChild())
 
+## step4 ##
+
+Module with dependencies. We will create a backbone model that depends on Backbone library:
+
+First, install backbone latest version using bower:
+
+```
+bower install backbone --save
+```
+
+We will play with require config to setup paths and baseUrl configs:
+
+We will define a require.config:
+
+´´´
+require.config({
+    paths: {
+        'backbone' : '../vendors/backbone/backbone'
+    }
+});
+´´´
+
+Note that a path is always baseUrl + path + '.js'
+
+We will add underscore and jquery to paths as well.
+
+No we can play changing our baseUrl to '/' an make the changes needed.
+
+
 
