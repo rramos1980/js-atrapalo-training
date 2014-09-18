@@ -22,3 +22,5 @@ Grunt serve
 ```
 
 ## step1 ##
+
+As we want to use require, we remove al javascript tags from index.html and to avoid automatic inclusion, we remove gruntwiredep task.
