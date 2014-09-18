@@ -99,3 +99,43 @@ bower install backbone#1.0.0 --save
 Note that we have a conflict between versions to be saved, we can save our decision in "resolutions".
 
 Now we have errors as backbone 1.0.0 is not AMD ready
+
+## step6 ##
+
+Generating a production build with Optimizer:
+
+First we will install Optimizer using npm:
+
+´´´
+npm install -g requirejs
+´´´
+
+We build set up a basic build config:
+
+´´´
+{
+    baseUrl: "app/",
+    optimize: "none",
+    "paths" : {
+        "backbone" : "vendors/backbone/backbone",
+        "underscore" : "vendors/underscore/underscore",
+        "jquery" : "vendors/jquery/dist/jquery"
+    },
+    shim: {
+        'backbone' : {
+            deps: ['underscore'],
+            exports: 'Backbone'
+        }
+    },
+    name: "scripts/main",
+    out: "app/scripts/main.dist.js"
+}
+´´´
+
+And run optimizer:
+
+´´´
+r.js -o app.build.js
+´´´
+
+We can try with 'optimize: "none"' to see generated code (not uglifyed).
