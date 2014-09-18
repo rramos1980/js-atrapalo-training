@@ -72,13 +72,13 @@ We will play with require config to setup paths and baseUrl configs:
 
 We will define a require.config:
 
-´´´
+```
 require.config({
     paths: {
         'backbone' : '../vendors/backbone/backbone'
     }
 });
-´´´
+```
 
 Note that a path is always baseUrl + path + '.js'
 
@@ -106,13 +106,13 @@ Generating a production build with Optimizer:
 
 First we will install Optimizer using npm:
 
-´´´
+```
 npm install -g requirejs
-´´´
+```
 
 We build set up a basic build config:
 
-´´´
+```
 {
     baseUrl: "app/",
     optimize: "none",
@@ -130,12 +130,12 @@ We build set up a basic build config:
     name: "scripts/main",
     out: "app/scripts/main.dist.js"
 }
-´´´
+```
 
 And run optimizer:
 
-´´´
+```
 r.js -o app.build.js
-´´´
+```
 
 We can try with 'optimize: "none"' to see generated code (not uglifyed).
