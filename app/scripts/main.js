@@ -1,1 +1,4 @@
-console.log('\'Allo \'Allo!');
+require(['modules/aModuleDefinedWithAnObject', 'modules/aModuleDefinedWithADefinitionFunction'],
+    function(objectModule, callbackModule) {
+        console.log(objectModule, callbackModule);
+});

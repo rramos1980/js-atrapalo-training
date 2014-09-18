@@ -49,4 +49,13 @@ Full bower api reference: http://bower.io/docs/api/
 
 * Include require script in index.html. We will use scrips/main.js as data main for requirejs.
 
+## step3 ##
+
+We will require directly from main some test modules without dependencies:
+
+* A module defined with only an Object.
+* A module defined with a callback function.
+
+Check the mechanichs, inspecting source we will see script tags on the header of the page (head.appendChild())
+
 
