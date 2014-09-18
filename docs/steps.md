@@ -43,6 +43,10 @@ Script loading with require.
 bower install requirejs --save
 ```
 
-Check that now we have requirejs in our folder "app/vendors". Remember to include this new folder to .gitignore
+Check that now we have requirejs in our folder "app/vendors". Remember to include this new folder to .gitignore.
+
+Full bower api reference: http://bower.io/docs/api/
 
 * Include require script in index.html. We will use scrips/main.js as data main for requirejs.
+
+
